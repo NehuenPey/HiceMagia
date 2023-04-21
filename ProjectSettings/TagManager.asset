@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Caldero
   - Pocion
+  - Ingredient
   layers:
   - Default
   - TransparentFX

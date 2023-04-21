@@ -11,7 +11,6 @@ public class MoverObjetos : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private BoxCollider2D boxCollider;
     private static List<GameObject> objetosEnCaldero = new List<GameObject>();
-    //private int contadorObjetosEnCaldero = 0;
 
     void Start()
     {
@@ -96,6 +95,10 @@ public class MoverObjetos : MonoBehaviour
     public void Devolver()
     {
         transform.position = posicionInicial;
+        enCaldero = false;
+        spriteRenderer.enabled = true;
+        boxCollider.enabled = true;
     }
+    
 }
 
