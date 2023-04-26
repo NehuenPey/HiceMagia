@@ -7,6 +7,10 @@ TagManager:
   - Caldero
   - Pocion
   - Ingredient
+  - Rojo
+  - Amarillo
+  - Azul
+  - Blanco
   layers:
   - Default
   - TransparentFX
