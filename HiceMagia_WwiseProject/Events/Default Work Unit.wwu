@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6668E4F6-3764-404C-9879-F87C55BE47DA}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{6668E4F6-3764-404C-9879-F87C55BE47DA}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Music" ID="{8BFF2174-D570-4EBF-A985-8E4966F33A66}">
+					<ChildrenList>
+						<Action Name="" ID="{4D24D173-E4B3-4362-B547-15E6828F56C8}" ShortID="996005582">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Main_Loop" ID="{32C41D0E-593C-45D8-A396-A2DFCB21D4F2}" WorkUnitID="{59867B58-8AAC-43BB-8B6E-28A0D7258CCB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Pocion_Completa" ID="{4986F5B6-AE4F-45F8-977E-B555BECA1DE4}">
+					<ChildrenList>
+						<Action Name="" ID="{9A231ED6-9AAB-481F-B7E8-AB5241BED5F9}" ShortID="30985620">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pocion_Completa" ID="{A4B4109D-5740-4936-909F-CCBCC71B9F78}" WorkUnitID="{742B796B-333F-43D5-AD33-8F970FDF3619}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Tirar_Elemento" ID="{C24A2C3C-2B7B-4857-BE80-951823354BA4}">
+					<ChildrenList>
+						<Action Name="" ID="{F42E516A-4D90-4E55-A132-B067C1D1088D}" ShortID="7889062">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tirar_Elemento" ID="{71F35E97-4FAE-4BCF-8B7A-3A10984023D8}" WorkUnitID="{742B796B-333F-43D5-AD33-8F970FDF3619}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_caldero" ID="{4C15CB8F-4F42-40F1-B7EA-A70B2B0A1F6E}">
+					<ChildrenList>
+						<Action Name="" ID="{DE667820-FA07-4195-90CB-C27649B7880A}" ShortID="540666843">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="caldero" ID="{E9FAD49A-63F6-43C2-9699-E3B6A1F1C32C}" WorkUnitID="{742B796B-333F-43D5-AD33-8F970FDF3619}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Agarrar" ID="{F3DFD98B-EC52-4E66-B6D0-E593EEF5CBF8}">
+					<ChildrenList>
+						<Action Name="" ID="{AE77319D-4ED0-489A-93A1-A8D158D613DE}" ShortID="759038943">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Agarrar" ID="{76F16808-8F77-4795-A356-7C889C1D1319}" WorkUnitID="{742B796B-333F-43D5-AD33-8F970FDF3619}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

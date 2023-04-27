@@ -1,0 +1,20 @@
+Event	ID	Name			Wwise Object Path	Notes
+	284769792	Play_Pocion_Completa			\Default Work Unit\Play_Pocion_Completa	
+	1663017302	Play_Tirar_Elemento			\Default Work Unit\Play_Tirar_Elemento	
+	2932040671	Play_Music			\Default Work Unit\Play_Music	
+	3323300174	Play_Agarrar			\Default Work Unit\Play_Agarrar	
+	4083340090	Play_caldero			\Default Work Unit\Play_caldero	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	64265019	caldero	C:\Users\Manu\Documents\GitHub\HiceMagia\HiceMagia_WwiseProject\.cache\Mac\SFX\caldero_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\General\caldero		2225320
+	359338710	Tirar elemento 1	C:\Users\Manu\Documents\GitHub\HiceMagia\HiceMagia_WwiseProject\.cache\Mac\SFX\Tirar elemento 1_A9FF7783.wem		\Actor-Mixer Hierarchy\Default Work Unit\General\Tirar_Elemento\Tirar elemento 1		123868
+	404872232	Sfx_Agarrar_3	C:\Users\Manu\Documents\GitHub\HiceMagia\HiceMagia_WwiseProject\.cache\Mac\SFX\Sfx_Agarrar_3_F699B357.wem		\Actor-Mixer Hierarchy\Default Work Unit\General\Agarrar\Sfx_Agarrar_3		6164
+	456016667	Efecto pocion 3	C:\Users\Manu\Documents\GitHub\HiceMagia\HiceMagia_WwiseProject\.cache\Mac\SFX\Efecto pocion 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\General\Pocion_Completa\Efecto pocion 3		789632
+	582036373	Efecto pocion 1	C:\Users\Manu\Documents\GitHub\HiceMagia\HiceMagia_WwiseProject\.cache\Mac\SFX\Efecto pocion 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\General\Pocion_Completa\Efecto pocion 1		906664
+	628460825	Sfx_Agarrar_2	C:\Users\Manu\Documents\GitHub\HiceMagia\HiceMagia_WwiseProject\.cache\Mac\SFX\Sfx_Agarrar_2_F4018882.wem		\Actor-Mixer Hierarchy\Default Work Unit\General\Agarrar\Sfx_Agarrar_2		5624
+	632771684	Sfx_Agarrar_1	C:\Users\Manu\Documents\GitHub\HiceMagia\HiceMagia_WwiseProject\.cache\Mac\SFX\Sfx_Agarrar_1_92677029.wem		\Actor-Mixer Hierarchy\Default Work Unit\General\Agarrar\Sfx_Agarrar_1		11684
+	734110093	Tirar elemento 3	C:\Users\Manu\Documents\GitHub\HiceMagia\HiceMagia_WwiseProject\.cache\Mac\SFX\Tirar elemento 3_C9E0D3AD.wem		\Actor-Mixer Hierarchy\Default Work Unit\General\Tirar_Elemento\Tirar elemento 3		136528
+	742639669	Tirar elemento 2	C:\Users\Manu\Documents\GitHub\HiceMagia\HiceMagia_WwiseProject\.cache\Mac\SFX\Tirar elemento 2_AF7B7FD9.wem		\Actor-Mixer Hierarchy\Default Work Unit\General\Tirar_Elemento\Tirar elemento 2		154840
+	1046740573	Hice Brujeria Loop	C:\Users\Manu\Documents\GitHub\HiceMagia\HiceMagia_WwiseProject\.cache\Mac\SFX\Hice Brujeria Loop_4AEA8E64.wem		\Interactive Music Hierarchy\Default Work Unit\Main_Loop\Hice Brujeria Loop\Hice Brujeria Loop		18473956
+	1065199148	Efecto pocion 2	C:\Users\Manu\Documents\GitHub\HiceMagia\HiceMagia_WwiseProject\.cache\Mac\SFX\Efecto pocion 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\General\Pocion_Completa\Efecto pocion 2		561516
+

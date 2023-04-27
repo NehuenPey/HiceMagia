@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Manu\Documents\GitHub\HiceMagia\HiceMagia_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Manu\Documents\GitHub\HiceMagia\HiceMagia_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Manu\Documents\GitHub\HiceMagia\HiceMagia_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Manu\Documents\GitHub\HiceMagia\HiceMagia_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="365502987">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb"/>
+			</IncludedAuxBusses>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="1241904153">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3323300174" Name="Play_Agarrar" ObjectPath="\Events\Default Work Unit\Play_Agarrar" DurationType="OneShot" DurationMin="0.026498" DurationMax="0.078336">
+					<IncludedMemoryFiles>
+						<File Id="404872232" Language="SFX">
+							<ShortName>Sfx_Agarrar_3.wav</ShortName>
+							<Path>SFX\Sfx_Agarrar_3_F699B357.wem</Path>
+						</File>
+						<File Id="628460825" Language="SFX">
+							<ShortName>Sfx_Agarrar_2.wav</ShortName>
+							<Path>SFX\Sfx_Agarrar_2_F4018882.wem</Path>
+						</File>
+						<File Id="632771684" Language="SFX">
+							<ShortName>Sfx_Agarrar_1.wav</ShortName>
+							<Path>SFX\Sfx_Agarrar_1_92677029.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4083340090" Name="Play_caldero" ObjectPath="\Events\Default Work Unit\Play_caldero" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="64265019" Language="SFX">
+							<ShortName>caldero.wav</ShortName>
+							<Path>SFX\caldero_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="1046740573" Language="SFX">
+							<ShortName>Hice Brujeria Loop.wav</ShortName>
+							<Path>SFX\Hice Brujeria Loop_4AEA8E64.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="284769792" Name="Play_Pocion_Completa" ObjectPath="\Events\Default Work Unit\Play_Pocion_Completa" DurationType="OneShot" DurationMin="2.976434" DurationMax="6.411878">
+					<IncludedMemoryFiles>
+						<File Id="456016667" Language="SFX">
+							<ShortName>Efecto pocion 3.wav</ShortName>
+							<Path>SFX\Efecto pocion 3_10C4C929.wem</Path>
+						</File>
+						<File Id="582036373" Language="SFX">
+							<ShortName>Efecto pocion 1.wav</ShortName>
+							<Path>SFX\Efecto pocion 1_10C4C929.wem</Path>
+						</File>
+						<File Id="1065199148" Language="SFX">
+							<ShortName>Efecto pocion 2.wav</ShortName>
+							<Path>SFX\Efecto pocion 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1663017302" Name="Play_Tirar_Elemento" ObjectPath="\Events\Default Work Unit\Play_Tirar_Elemento" DurationType="OneShot" DurationMin="0.590171" DurationMax="1.043423">
+					<IncludedMemoryFiles>
+						<File Id="359338710" Language="SFX">
+							<ShortName>Tirar elemento 1.wav</ShortName>
+							<Path>SFX\Tirar elemento 1_A9FF7783.wem</Path>
+						</File>
+						<File Id="734110093" Language="SFX">
+							<ShortName>Tirar elemento 3.wav</ShortName>
+							<Path>SFX\Tirar elemento 3_C9E0D3AD.wem</Path>
+						</File>
+						<File Id="742639669" Language="SFX">
+							<ShortName>Tirar elemento 2.wav</ShortName>
+							<Path>SFX\Tirar elemento 2_AF7B7FD9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

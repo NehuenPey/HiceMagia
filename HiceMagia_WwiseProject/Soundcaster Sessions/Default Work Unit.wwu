@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{57412456-DF63-44C7-B10D-0FE8035FFCBD}" SchemaVersion="103">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{57412456-DF63-44C7-B10D-0FE8035FFCBD}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Mix_Principal" ID="{5DD52B27-6186-433E-9C82-259A716C5241}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Pocion_Completa" ID="{4986F5B6-AE4F-45F8-977E-B555BECA1DE4}" WorkUnitID="{6668E4F6-3764-404C-9879-F87C55BE47DA}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Agarrar" ID="{F3DFD98B-EC52-4E66-B6D0-E593EEF5CBF8}" WorkUnitID="{6668E4F6-3764-404C-9879-F87C55BE47DA}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_caldero" ID="{4C15CB8F-4F42-40F1-B7EA-A70B2B0A1F6E}" WorkUnitID="{6668E4F6-3764-404C-9879-F87C55BE47DA}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Music" ID="{8BFF2174-D570-4EBF-A985-8E4966F33A66}" WorkUnitID="{6668E4F6-3764-404C-9879-F87C55BE47DA}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Tirar_Elemento" ID="{C24A2C3C-2B7B-4857-BE80-951823354BA4}" WorkUnitID="{6668E4F6-3764-404C-9879-F87C55BE47DA}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

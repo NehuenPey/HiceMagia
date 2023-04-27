@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{742B796B-333F-43D5-AD33-8F970FDF3619}" SchemaVersion="103" RootDocumentID="{686AEE92-7E4C-4E78-A4D4-2A7BDCA85249}" ParentDocumentID="{686AEE92-7E4C-4E78-A4D4-2A7BDCA85249}">
+	<AudioObjects>
+		<WorkUnit Name="General" ID="{742B796B-333F-43D5-AD33-8F970FDF3619}" OwnerID="{686AEE92-7E4C-4E78-A4D4-2A7BDCA85249}" PersistMode="Nested">
+			<ChildrenList>
+				<RandomSequenceContainer Name="Tirar_Elemento" ID="{71F35E97-4FAE-4BCF-8B7A-3A10984023D8}" ShortID="901885088">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{EA552762-5F98-44B1-8525-EC71C5C26BB7}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="300"/>
+											<Property Name="Min" Type="Real64" Value="-300"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F54D201F-A0E1-4F10-A77B-5FC93019AC1D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{E135E36E-867A-4631-ACF4-2883641D7248}" WorkUnitID="{308BA6EB-247D-49E1-BD3E-E63A9E184758}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Tirar elemento 2" ID="{1E225DDA-2274-43D6-A6DC-915D678E67F3}" ShortID="927600776">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F54D201F-A0E1-4F10-A77B-5FC93019AC1D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{308BA6EB-247D-49E1-BD3E-E63A9E184758}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tirar elemento 2" ID="{ACC8F9A6-A47D-439D-B062-667F3DA74F1B}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0240386438353402"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0875693454001675"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.309068277882944"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.18647877787286"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Tirar elemento 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="742639669"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Tirar elemento 2" ID="{ACC8F9A6-A47D-439D-B062-667F3DA74F1B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tirar elemento 1" ID="{5BDDEB58-AD9C-4FBB-9F01-856A8B814869}" ShortID="98733603">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F54D201F-A0E1-4F10-A77B-5FC93019AC1D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{308BA6EB-247D-49E1-BD3E-E63A9E184758}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tirar elemento 1" ID="{86A431CF-8731-4F95-ABE5-66D7A3A97469}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.019248646514938"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0296133023306739"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.198409125615515"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.900244390852486"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Tirar elemento 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="359338710"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Tirar elemento 1" ID="{86A431CF-8731-4F95-ABE5-66D7A3A97469}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tirar elemento 3" ID="{7FBF6E5D-7CAD-4AE7-956B-B6DF8F293BA4}" ShortID="585789093">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F54D201F-A0E1-4F10-A77B-5FC93019AC1D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{308BA6EB-247D-49E1-BD3E-E63A9E184758}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tirar elemento 3" ID="{43B3AB57-F979-4072-A1AE-3DFFC3533B62}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0815687460922531"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.31048748512535"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.08407494806478"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Tirar elemento 3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="734110093"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Tirar elemento 3" ID="{43B3AB57-F979-4072-A1AE-3DFFC3533B62}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Pocion_Completa" ID="{A4B4109D-5740-4936-909F-CCBCC71B9F78}" ShortID="265231580">
+					<PropertyList>
+						<Property Name="InitialDelay" Type="Real64">
+							<ValueList>
+								<Value>0.3</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{F010FFD7-42D7-4442-A03C-24869F97949E}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="300"/>
+											<Property Name="Min" Type="Real64" Value="-300"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F54D201F-A0E1-4F10-A77B-5FC93019AC1D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{E135E36E-867A-4631-ACF4-2883641D7248}" WorkUnitID="{308BA6EB-247D-49E1-BD3E-E63A9E184758}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Efecto pocion 1" ID="{068EB98B-9D6A-4F70-A0E4-1AF1FCCE79F5}" ShortID="16163925">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F54D201F-A0E1-4F10-A77B-5FC93019AC1D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{308BA6EB-247D-49E1-BD3E-E63A9E184758}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Efecto pocion 1" ID="{AB313A74-311A-496E-999A-D2D308FE0FBB}">
+									<Language>SFX</Language>
+									<AudioFile>Efecto pocion 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="582036373"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Efecto pocion 1" ID="{AB313A74-311A-496E-999A-D2D308FE0FBB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Efecto pocion 2" ID="{A7635F0E-ACB0-4819-8B6F-A15CDE245907}" ShortID="581362268">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F54D201F-A0E1-4F10-A77B-5FC93019AC1D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{308BA6EB-247D-49E1-BD3E-E63A9E184758}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Efecto pocion 2" ID="{E767B0DA-FA7B-4B58-9D7E-786AF270ECB2}">
+									<Language>SFX</Language>
+									<AudioFile>Efecto pocion 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1065199148"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Efecto pocion 2" ID="{E767B0DA-FA7B-4B58-9D7E-786AF270ECB2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Efecto pocion 3" ID="{4B9B9C35-B3E6-4991-8922-D69AC9A2B6AD}" ShortID="860024533">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F54D201F-A0E1-4F10-A77B-5FC93019AC1D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{308BA6EB-247D-49E1-BD3E-E63A9E184758}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Efecto pocion 3" ID="{D18017DD-282A-4AB0-ADD9-AD1D4F023991}">
+									<Language>SFX</Language>
+									<AudioFile>Efecto pocion 3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="456016667"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Efecto pocion 3" ID="{D18017DD-282A-4AB0-ADD9-AD1D4F023991}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
+				<Sound Name="caldero" ID="{E9FAD49A-63F6-43C2-9699-E3B6A1F1C32C}" ShortID="1014907866">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F54D201F-A0E1-4F10-A77B-5FC93019AC1D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Ambiente" ID="{17006E28-8FBF-431B-93AF-F53665CBB3C1}" WorkUnitID="{308BA6EB-247D-49E1-BD3E-E63A9E184758}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="caldero" ID="{AD62A324-3EE5-4B7B-A093-7E7AB10530DB}">
+							<Language>SFX</Language>
+							<AudioFile>caldero.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="64265019"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="caldero" ID="{AD62A324-3EE5-4B7B-A093-7E7AB10530DB}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="Agarrar" ID="{76F16808-8F77-4795-A356-7C889C1D1319}" ShortID="221853668">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{5CB7A0FC-AD22-490F-8C5A-A105943C8F9F}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="300"/>
+											<Property Name="Min" Type="Real64" Value="-300"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F54D201F-A0E1-4F10-A77B-5FC93019AC1D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{E135E36E-867A-4631-ACF4-2883641D7248}" WorkUnitID="{308BA6EB-247D-49E1-BD3E-E63A9E184758}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Sfx_Agarrar_1" ID="{B97D3773-B403-4F1A-B823-56E7CF55B39E}" ShortID="215005946">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F54D201F-A0E1-4F10-A77B-5FC93019AC1D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{308BA6EB-247D-49E1-BD3E-E63A9E184758}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sfx_Agarrar_1" ID="{21B27C22-8E3A-46C7-BFA1-C1CF3C72BB1B}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.000754675067652167"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0188668766913042"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Sfx_Agarrar_1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="632771684"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Sfx_Agarrar_1" ID="{21B27C22-8E3A-46C7-BFA1-C1CF3C72BB1B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Sfx_Agarrar_2" ID="{0228FDC8-1363-4E7A-A6AD-6635659E2994}" ShortID="879670947">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F54D201F-A0E1-4F10-A77B-5FC93019AC1D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{308BA6EB-247D-49E1-BD3E-E63A9E184758}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sfx_Agarrar_2" ID="{16D349F2-25A9-4DC5-A492-5EABCE1C538F}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0035497914178394"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0114139447127452"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Sfx_Agarrar_2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="628460825"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Sfx_Agarrar_2" ID="{16D349F2-25A9-4DC5-A492-5EABCE1C538F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Sfx_Agarrar_3" ID="{BBD7C743-7D9A-4E5A-8630-34A6CB6C1324}" ShortID="515008006">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F54D201F-A0E1-4F10-A77B-5FC93019AC1D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{308BA6EB-247D-49E1-BD3E-E63A9E184758}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sfx_Agarrar_3" ID="{EA8CD03F-8231-41ED-AA8C-C044E14EE311}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.00197192362950269"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0138650880199408"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Sfx_Agarrar_3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="404872232"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Sfx_Agarrar_3" ID="{EA8CD03F-8231-41ED-AA8C-C044E14EE311}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{80FAE8B3-1BA9-47BE-8E0B-53A4AFBBD7A1}">
+							<PropertyList>
+								<Property Name="PanX" Type="Real64" Value="-34.1880341880341"/>
+								<Property Name="PanY" Type="Real64" Value="27.8283485045514"/>
+							</PropertyList>
+						</Panner>
+					</PositioningInfo>
+					<ObjectLists/>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
