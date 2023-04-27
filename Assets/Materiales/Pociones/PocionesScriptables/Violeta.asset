@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombre: Violeta
   color: {r: 0.56078434, g: 0.09411766, b: 0.6627451, a: 0}
-  imagen: {fileID: 21300000, guid: d5b6c05f70e38e94d9a06a0bdad559ac, type: 3}
+  imagen: {fileID: 21300000, guid: c8e5fb3be69c7fd469c2e6dac29852b5, type: 3}
   ingrediente1: {fileID: 11400000, guid: f78e28cb7f77d4748a111482c5bd3619, type: 2}
   ingrediente2: {fileID: 11400000, guid: 36ccad4c93864fb47a75686d26721aa3, type: 2}

@@ -37,7 +37,7 @@ public class PocionManager : MonoBehaviour
         }
     }
 
-    public void AumentarPuntuacion(int cantidad)
+    public void IncrementarPuntuacion(int cantidad)
     {
         puntuacion += cantidad;
         ActualizarUI();

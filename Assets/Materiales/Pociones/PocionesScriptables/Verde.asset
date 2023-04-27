@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombre: Verde
   color: {r: 0.14901961, g: 0.427451, b: 0, a: 0}
-  imagen: {fileID: 21300000, guid: 06c8a9006a2b6794faad0f8d666b9bc0, type: 3}
+  imagen: {fileID: 21300000, guid: edb6359fa89b5a043b2902b526658484, type: 3}
   ingrediente1: {fileID: 11400000, guid: b9bcb1e67a1934d41819f0dfffe57f1f, type: 2}
   ingrediente2: {fileID: 11400000, guid: 36ccad4c93864fb47a75686d26721aa3, type: 2}

@@ -83,6 +83,9 @@ public class MoverObjeto : MonoBehaviour
                     pocion.GetComponent<SpriteRenderer>().enabled = true;
                     Debug.Log("Hola que hace");
                     objetosEnCaldero.Clear(); // Limpiar la lista de objetos en el caldero
+
+                    PocionManager pocionManager = FindObjectOfType<PocionManager>();
+                    pocionManager.IncrementarPuntuacion(2);
                     Invoke("DesactivarPocionGenerada", tiempoPocionEnPantalla);
                 }
             }
