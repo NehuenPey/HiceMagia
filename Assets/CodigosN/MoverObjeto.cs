@@ -12,6 +12,9 @@ public class MoverObjeto : MonoBehaviour
     private BoxCollider2D boxCollider;
     private static List<GameObject> objetosEnCaldero = new List<GameObject>();
     [SerializeField] private float tiempoPocionEnPantalla = 3f;
+    public AK.Wwise.Event magiapocion;
+    public AK.Wwise.Event tirarencaldero;
+    public AK.Wwise.Event agarrar;
 
     private void Awake()
     {
@@ -34,6 +37,7 @@ public class MoverObjeto : MonoBehaviour
             boxCollider.enabled = false;
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+            agarrar.Post(gameObject);
         }
     }
 
@@ -62,6 +66,7 @@ public class MoverObjeto : MonoBehaviour
                 enCaldero = true;
                 objetoEnCaldero = hit.collider.gameObject;
                 objetosEnCaldero.Add(gameObject); // añadir objeto a la lista de objetos en el caldero
+                tirarencaldero.Post(gameObject);
                 Debug.Log("Objeto agregado a la lista de objetos en el caldero. Total de objetos en caldero: " + objetosEnCaldero.Count);
 
                 spriteRenderer.enabled = false;
@@ -80,6 +85,7 @@ public class MoverObjeto : MonoBehaviour
 
                     // Generar la poción
                     transform.position = posicionInicial;
+                    magiapocion.Post(gameObject);
                     pocion.GetComponent<SpriteRenderer>().enabled = true;
                     Debug.Log("Hola que hace");
                     objetosEnCaldero.Clear(); // Limpiar la lista de objetos en el caldero
