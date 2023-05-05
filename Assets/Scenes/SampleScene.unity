@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 131240873}
   m_Layer: 0
   m_Name: ingredienteAzul
-  m_TagString: Ingredient
+  m_TagString: Azul
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -245,7 +245,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d96eabba30e17294cbddda2b1010ee16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pocion: {fileID: 1292548721}
+  pocionRosa: {fileID: 1292548721}
+  pocionVerde: {fileID: 263553570}
+  pocionVioleta: {fileID: 2062327135}
+  pocionNaranja: {fileID: 2129956384}
   tiempoPocionEnPantalla: 2
   magiapocion:
     idInternal: 0
@@ -1047,7 +1050,7 @@ GameObject:
   - component: {fileID: 679661639}
   m_Layer: 0
   m_Name: ingredienteAmarillo
-  m_TagString: Ingredient
+  m_TagString: Amarillo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1155,7 +1158,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d96eabba30e17294cbddda2b1010ee16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pocion: {fileID: 2129956384}
+  pocionRosa: {fileID: 1292548721}
+  pocionVerde: {fileID: 263553570}
+  pocionVioleta: {fileID: 2062327135}
+  pocionNaranja: {fileID: 2129956384}
   tiempoPocionEnPantalla: 2
   magiapocion:
     idInternal: 0
@@ -1590,7 +1596,7 @@ GameObject:
   - component: {fileID: 1054628526}
   m_Layer: 0
   m_Name: ingredienteRojo
-  m_TagString: Ingredient
+  m_TagString: Rojo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1698,7 +1704,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d96eabba30e17294cbddda2b1010ee16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pocion: {fileID: 263553570}
+  pocionRosa: {fileID: 1292548721}
+  pocionVerde: {fileID: 263553570}
+  pocionVioleta: {fileID: 2062327135}
+  pocionNaranja: {fileID: 2129956384}
   tiempoPocionEnPantalla: 2
   magiapocion:
     idInternal: 0
@@ -1966,7 +1975,7 @@ GameObject:
   - component: {fileID: 1480275070}
   m_Layer: 0
   m_Name: ingredienteBlanco
-  m_TagString: Ingredient
+  m_TagString: Blanco
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2023,7 +2032,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d96eabba30e17294cbddda2b1010ee16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pocion: {fileID: 2062327135}
+  pocionRosa: {fileID: 1292548721}
+  pocionVerde: {fileID: 263553570}
+  pocionVioleta: {fileID: 2062327135}
+  pocionNaranja: {fileID: 2129956384}
   tiempoPocionEnPantalla: 2
   magiapocion:
     idInternal: 0
