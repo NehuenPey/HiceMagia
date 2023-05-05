@@ -5,6 +5,7 @@ using UnityEngine;
 public class MoverObjeto : MonoBehaviour
 {
     private bool enCaldero;
+    private Tiempo timer;
     public GameObject pocion;
     private Vector2 posicionInicial;
     private GameObject objetoEnCaldero;
@@ -18,6 +19,7 @@ public class MoverObjeto : MonoBehaviour
 
     private void Awake()
     {
+        timer = GetComponent<Tiempo>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
 
@@ -30,8 +32,8 @@ public class MoverObjeto : MonoBehaviour
 
     private void OnMouseDown()
     {
-        // Verificar si el objeto tiene un componente SpriteRenderer
-        if (spriteRenderer != null)
+        // Verificar si el objeto tiene un componente SpriteRenderer y si el tiempo ha terminado
+        if (spriteRenderer != null && !Tiempo.tiempoTerminado)
         {
             // Desactivar el collider y hacer que el objeto siga al mouse
             boxCollider.enabled = false;
@@ -43,7 +45,7 @@ public class MoverObjeto : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        if (!enCaldero)
+        if (!enCaldero && !Tiempo.tiempoTerminado)
         {
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = new Vector2(transform.position.x, transform.position.y);
@@ -67,7 +69,7 @@ public class MoverObjeto : MonoBehaviour
                 objetoEnCaldero = hit.collider.gameObject;
                 objetosEnCaldero.Add(gameObject); // añadir objeto a la lista de objetos en el caldero
                 tirarencaldero.Post(gameObject);
-                Debug.Log("Objeto agregado a la lista de objetos en el caldero. Total de objetos en caldero: " + objetosEnCaldero.Count);
+                Debug.Log("Total de objetos en caldero: " + objetosEnCaldero.Count);
 
                 spriteRenderer.enabled = false;
                 boxCollider.enabled = false;
@@ -87,10 +89,10 @@ public class MoverObjeto : MonoBehaviour
                     transform.position = posicionInicial;
                     magiapocion.Post(gameObject);
                     pocion.GetComponent<SpriteRenderer>().enabled = true;
-                    Debug.Log("Hola que hace");
+                    Debug.Log("Pocion Generada");
                     objetosEnCaldero.Clear(); // Limpiar la lista de objetos en el caldero
 
-                    PocionManager pocionManager = FindObjectOfType<PocionManager>();
+                    Puntuacion pocionManager = FindObjectOfType<Puntuacion>();
                     pocionManager.IncrementarPuntuacion(2);
                     Invoke("DesactivarPocionGenerada", tiempoPocionEnPantalla);
                 }
@@ -119,3 +121,4 @@ public class MoverObjeto : MonoBehaviour
         pocion.GetComponent<SpriteRenderer>().enabled = false;
     }
 }
+
