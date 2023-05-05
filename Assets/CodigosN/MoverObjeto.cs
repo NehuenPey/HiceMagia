@@ -69,7 +69,7 @@ public class MoverObjeto : MonoBehaviour
                 objetoEnCaldero = hit.collider.gameObject;
                 objetosEnCaldero.Add(gameObject); // añadir objeto a la lista de objetos en el caldero
                 tirarencaldero.Post(gameObject);
-                Debug.Log("Total de objetos en caldero: " + objetosEnCaldero.Count);
+                // Debug.Log("Total de objetos en caldero: " + objetosEnCaldero.Count);
 
                 spriteRenderer.enabled = false;
                 boxCollider.enabled = false;
@@ -89,7 +89,7 @@ public class MoverObjeto : MonoBehaviour
                     transform.position = posicionInicial;
                     magiapocion.Post(gameObject);
                     pocion.GetComponent<SpriteRenderer>().enabled = true;
-                    Debug.Log("Pocion Generada");
+                    // Debug.Log("Pocion Generada");
                     objetosEnCaldero.Clear(); // Limpiar la lista de objetos en el caldero
 
                     Puntuacion pocionManager = FindObjectOfType<Puntuacion>();

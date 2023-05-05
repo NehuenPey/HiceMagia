@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pocion: {fileID: 1292548721}
-  tiempoPocionEnPantalla: 2.5
+  tiempoPocionEnPantalla: 2
   magiapocion:
     idInternal: 0
     valueGuidInternal: 
@@ -1156,7 +1156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pocion: {fileID: 2129956384}
-  tiempoPocionEnPantalla: 2.5
+  tiempoPocionEnPantalla: 2
   magiapocion:
     idInternal: 0
     valueGuidInternal: 
@@ -1699,7 +1699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pocion: {fileID: 263553570}
-  tiempoPocionEnPantalla: 2.5
+  tiempoPocionEnPantalla: 2
   magiapocion:
     idInternal: 0
     valueGuidInternal: 
@@ -2024,7 +2024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pocion: {fileID: 2062327135}
-  tiempoPocionEnPantalla: 2.5
+  tiempoPocionEnPantalla: 2
   magiapocion:
     idInternal: 0
     valueGuidInternal: 
