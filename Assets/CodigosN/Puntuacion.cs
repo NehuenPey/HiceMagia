@@ -21,6 +21,12 @@ public class Puntuacion : MonoBehaviour
         ActualizarUI();
     }
 
+    public void ReducirPuntuacion(int cantidad)
+    {
+        puntuacion -= cantidad;
+        ActualizarUI();
+    }
+
     public void ActualizarUI()
     {
         textoPuntuacion.text = "Puntuación: " + puntuacion;
