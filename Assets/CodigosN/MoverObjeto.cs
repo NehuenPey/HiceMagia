@@ -90,7 +90,6 @@ public class MoverObjeto : MonoBehaviour
                         transform.position = posicionInicial;
                         magiapocion.Post(gameObject);
                         pocionRosa.GetComponent<SpriteRenderer>().enabled = true;
-                        objetosEnCaldero.Clear();
 
                         Puntuacion pocionManager = FindObjectOfType<Puntuacion>();
                         pocionManager.IncrementarPuntuacion(5);
@@ -103,7 +102,6 @@ public class MoverObjeto : MonoBehaviour
                     transform.position = posicionInicial;
                     magiapocion.Post(gameObject);
                     pocionVioleta.GetComponent<SpriteRenderer>().enabled = true;
-                    objetosEnCaldero.Clear();
 
                     Puntuacion pocionManager = FindObjectOfType<Puntuacion>();
                     pocionManager.IncrementarPuntuacion(5);
@@ -117,7 +115,6 @@ public class MoverObjeto : MonoBehaviour
                     transform.position = posicionInicial;
                     magiapocion.Post(gameObject);
                     pocionNaranja.GetComponent<SpriteRenderer>().enabled = true;
-                    objetosEnCaldero.Clear();
 
                     Puntuacion pocionManager = FindObjectOfType<Puntuacion>();
                     pocionManager.IncrementarPuntuacion(5);
@@ -131,7 +128,6 @@ public class MoverObjeto : MonoBehaviour
                     transform.position = posicionInicial;
                     magiapocion.Post(gameObject);
                     pocionVerde.GetComponent<SpriteRenderer>().enabled = true;
-                    objetosEnCaldero.Clear();
 
                     Puntuacion pocionManager = FindObjectOfType<Puntuacion>();
                     pocionManager.IncrementarPuntuacion(5);
@@ -145,7 +141,6 @@ public class MoverObjeto : MonoBehaviour
                     transform.position = posicionInicial;
                     magiapocion.Post(gameObject);
                     explosion.GetComponent<SpriteRenderer>().enabled = true;
-                    objetosEnCaldero.Clear();
 
                     Puntuacion pocionManager = FindObjectOfType<Puntuacion>();
                     pocionManager.ReducirPuntuacion(3);
@@ -159,28 +154,26 @@ public class MoverObjeto : MonoBehaviour
                     transform.position = posicionInicial;
                     magiapocion.Post(gameObject);
                     mariposa.GetComponent<SpriteRenderer>().enabled = true;
-                    objetosEnCaldero.Clear();
 
                     Puntuacion pocionManager = FindObjectOfType<Puntuacion>();
                     pocionManager.ReducirPuntuacion(2);
                     Invoke("DesactivarPocionGenerada",tiempoPocionEnPantalla);
                 
                 }
-                else
-                    {
-                        // Si no se han combinado objetos que generen una poción, devolver los objetos a su posición inicial
+                // Si no se han combinado objetos que generen una poción, devolver los objetos a su posición inicial
                         foreach (GameObject obj in objetosEnCaldero)
                         {
                             obj.GetComponent<SpriteRenderer>().enabled = true;
                             obj.GetComponent<BoxCollider2D>().enabled = true;
                             obj.transform.position = obj.GetComponent<MoverObjeto>().PosicionInicial;
                             obj.GetComponent<MoverObjeto>().enCaldero = false;
+                            Debug.Log("bro acá toy");
                         }
                         transform.position = posicionInicial;
                         objetosEnCaldero.Clear(); // Limpiar la lista de objetos en el caldero
                         objetoEnCaldero.GetComponent<MoverObjeto>().spriteRenderer.enabled = true;
                         objetoEnCaldero.GetComponent<MoverObjeto>().boxCollider.enabled = true;
-                    }
+                    
                 }
             }
             if (!hitCaldero && objetosEnCaldero.Count < 2)
