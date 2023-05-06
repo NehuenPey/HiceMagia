@@ -12,7 +12,6 @@ public class Puntuacion : MonoBehaviour
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
-        ActualizarUI();
     }
 
     public void IncrementarPuntuacion(int cantidad)
