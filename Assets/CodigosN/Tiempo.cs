@@ -28,8 +28,6 @@ public class Tiempo : MonoBehaviour
             if (tiempoRestante <= 0)
             {
                 tiempoTerminado = true;
-                // Aquí puedes desactivar todos los objetos con los que interactúas
-                // por ejemplo, desactivando sus colliders
                 Collider[] colliders = FindObjectsOfType<Collider>();
                 foreach (Collider collider in colliders)
                 {
@@ -44,6 +42,27 @@ public class Tiempo : MonoBehaviour
             }
         }
     }
+    public void ReducirTiempo(float valor)
+{
+    tiempoRestante -= valor;
+    if (tiempoRestante < 0)
+    {
+        tiempoRestante = 0;
+        tiempoTerminado = true;
+        Collider[] colliders = FindObjectsOfType<Collider>();
+        foreach (Collider collider in colliders)
+        {
+            collider.enabled = false;
+        }
+
+    }
+    else
+    {
+        imagenCirculo.fillAmount = tiempoRestante / duracion;
+    }
+}
+
+
     private void CambioEscena()
     {
         SceneManager.LoadScene("PantallaFinal", LoadSceneMode.Single);

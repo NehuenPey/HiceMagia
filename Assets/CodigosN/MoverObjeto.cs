@@ -10,8 +10,9 @@ public class MoverObjeto : MonoBehaviour
     public GameObject pocionVerde;
     public GameObject pocionVioleta;
     public GameObject pocionNaranja;
-    public GameObject explosion;
-    public GameObject mariposa;
+    public GameObject prefabMariposas;
+    public GameObject prefabExplosion;
+    public GameObject prefabGatitos;
     private Vector2 posicionInicial;
     private GameObject objetoEnCaldero;
     private SpriteRenderer spriteRenderer;
@@ -33,6 +34,9 @@ public class MoverObjeto : MonoBehaviour
     private void Start()
     {
         posicionInicial = transform.position;
+        prefabMariposas.SetActive(false);
+        prefabExplosion.SetActive(false);
+        prefabGatitos.SetActive(false);
     }
 
     private void OnMouseDown()
@@ -108,8 +112,7 @@ public class MoverObjeto : MonoBehaviour
                     Invoke("DesactivarPocionGenerada",tiempoPocionEnPantalla);
                 
                 }
-                else if (objetosEnCaldero[0].CompareTag("Rojo") && objetosEnCaldero[1].CompareTag("Amarillo") ||
-                    objetosEnCaldero[0].CompareTag("Amarillo") && objetosEnCaldero[1].CompareTag("Rojo")) // Verificar si se han combinado otros objetos para generar otras pociones
+                else if (objetosEnCaldero[0].CompareTag("Rojo") && objetosEnCaldero[1].CompareTag("Amarillo")) // Verificar si se han combinado otros objetos para generar otras pociones
                 {
                     // Generar la poción naranja
                     transform.position = posicionInicial;
@@ -134,13 +137,12 @@ public class MoverObjeto : MonoBehaviour
                     Invoke("DesactivarPocionGenerada",tiempoPocionEnPantalla);
                 
                 }
-                else if (objetosEnCaldero[0].CompareTag("Amarillo") && objetosEnCaldero[1].CompareTag("Rojo") ||
-                    objetosEnCaldero[0].CompareTag("Rojo") && objetosEnCaldero[1].CompareTag("Amarillo")) // Verificar si se han combinado otros objetos para generar otras pociones
+                else if (objetosEnCaldero[0].CompareTag("Amarillo") && objetosEnCaldero[1].CompareTag("Rojo")) // Verificar si se han combinado otros objetos para generar otras pociones
                 {
                     // Generar la poción explosion
                     transform.position = posicionInicial;
                     magiapocion.Post(gameObject);
-                    explosion.GetComponent<SpriteRenderer>().enabled = true;
+                    prefabExplosion.SetActive(true);
 
                     Puntuacion pocionManager = FindObjectOfType<Puntuacion>();
                     pocionManager.ReducirPuntuacion(3);
@@ -153,10 +155,23 @@ public class MoverObjeto : MonoBehaviour
                     // Generar la poción mariposas
                     transform.position = posicionInicial;
                     magiapocion.Post(gameObject);
-                    mariposa.GetComponent<SpriteRenderer>().enabled = true;
+                    prefabMariposas.SetActive(true);
 
                     Puntuacion pocionManager = FindObjectOfType<Puntuacion>();
                     pocionManager.ReducirPuntuacion(2);
+                    Invoke("DesactivarPocionGenerada",tiempoPocionEnPantalla);
+                
+                }
+                else if (objetosEnCaldero[0].CompareTag("Blanco") && objetosEnCaldero[1].CompareTag("Amarillo") ||
+                    objetosEnCaldero[0].CompareTag("Amarillo") && objetosEnCaldero[1].CompareTag("Blanco")) // Verificar si se han combinado otros objetos para generar otras pociones
+                {
+                    // Generar la poción gatitos
+                    transform.position = posicionInicial;
+                    magiapocion.Post(gameObject);
+                    prefabGatitos.SetActive(true);
+
+                    Tiempo tiempoManager = FindObjectOfType<Tiempo>();
+                    tiempoManager.ReducirTiempo(5);
                     Invoke("DesactivarPocionGenerada",tiempoPocionEnPantalla);
                 
                 }
@@ -171,8 +186,6 @@ public class MoverObjeto : MonoBehaviour
                         }
                         transform.position = posicionInicial;
                         objetosEnCaldero.Clear(); // Limpiar la lista de objetos en el caldero
-                        objetoEnCaldero.GetComponent<MoverObjeto>().spriteRenderer.enabled = true;
-                        objetoEnCaldero.GetComponent<MoverObjeto>().boxCollider.enabled = true;
                     
                 }
             }
@@ -193,9 +206,23 @@ public class MoverObjeto : MonoBehaviour
         pocionVioleta.GetComponent<SpriteRenderer>().enabled = false;
         pocionVerde.GetComponent<SpriteRenderer>().enabled = false;
         pocionNaranja.GetComponent<SpriteRenderer>().enabled = false;
-        explosion.GetComponent<SpriteRenderer>().enabled = false;
-        mariposa.GetComponent<SpriteRenderer>().enabled = false;
-
     }
+    void ActivarPrefabConAnimacion()
+{
+    // Activamos el Prefab
+    prefabMariposas.SetActive(true);
+    prefabExplosion.SetActive(true);
+    prefabGatitos.SetActive(true);
+
+    // Obtenemos el componente Animator del Prefab
+    Animator anim = prefabMariposas.GetComponent<Animator>();
+    Animator anima = prefabExplosion.GetComponent<Animator>();
+    Animator animat = prefabGatitos.GetComponent<Animator>();
+
+    // Reproducimos la animación
+    anim.Play("lluvia de mariposas");
+    anima.Play("explosión (1)");
+    anima.Play("lluvia de gatitos");
+}
 
 }
