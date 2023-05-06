@@ -253,6 +253,7 @@ MonoBehaviour:
   prefabExplosion: {fileID: 505879427}
   prefabGatitos: {fileID: 966297004}
   tiempoPocionEnPantalla: 2
+  tiempoAnimacionEnPantalla: 5
   magiapocion:
     idInternal: 0
     valueGuidInternal: 
@@ -417,7 +418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2731992121090432555, guid: 67ec63c296613974cbc746eeae8b4831, type: 3}
       propertyPath: looping
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2731992121090432555, guid: 67ec63c296613974cbc746eeae8b4831, type: 3}
       propertyPath: prewarm
@@ -425,7 +426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2731992121090432555, guid: 67ec63c296613974cbc746eeae8b4831, type: 3}
       propertyPath: lengthInSec
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2731992121090432555, guid: 67ec63c296613974cbc746eeae8b4831, type: 3}
       propertyPath: playOnAwake
@@ -1252,6 +1253,7 @@ MonoBehaviour:
   prefabExplosion: {fileID: 505879427}
   prefabGatitos: {fileID: 966297004}
   tiempoPocionEnPantalla: 2
+  tiempoAnimacionEnPantalla: 5
   magiapocion:
     idInternal: 0
     valueGuidInternal: 
@@ -1811,6 +1813,7 @@ MonoBehaviour:
   prefabExplosion: {fileID: 505879427}
   prefabGatitos: {fileID: 966297004}
   tiempoPocionEnPantalla: 2
+  tiempoAnimacionEnPantalla: 5
   magiapocion:
     idInternal: 0
     valueGuidInternal: 
@@ -1965,7 +1968,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2731992121090432555, guid: cd1ac325cc5a2ef4084492fc1fbaad2e, type: 3}
       propertyPath: looping
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2731992121090432555, guid: cd1ac325cc5a2ef4084492fc1fbaad2e, type: 3}
       propertyPath: prewarm
@@ -1973,7 +1976,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2731992121090432555, guid: cd1ac325cc5a2ef4084492fc1fbaad2e, type: 3}
       propertyPath: lengthInSec
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2731992121090432555, guid: cd1ac325cc5a2ef4084492fc1fbaad2e, type: 3}
       propertyPath: playOnAwake
@@ -2225,6 +2228,7 @@ MonoBehaviour:
   prefabExplosion: {fileID: 505879427}
   prefabGatitos: {fileID: 966297004}
   tiempoPocionEnPantalla: 2
+  tiempoAnimacionEnPantalla: 5
   magiapocion:
     idInternal: 0
     valueGuidInternal: 
@@ -2550,7 +2554,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2731992121090432555, guid: 806e335414b28604c83b32458f70fc5f, type: 3}
       propertyPath: looping
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2731992121090432555, guid: 806e335414b28604c83b32458f70fc5f, type: 3}
       propertyPath: prewarm
@@ -2562,7 +2566,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2731992121090432555, guid: 806e335414b28604c83b32458f70fc5f, type: 3}
       propertyPath: lengthInSec
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2731992121090432555, guid: 806e335414b28604c83b32458f70fc5f, type: 3}
       propertyPath: playOnAwake

@@ -19,6 +19,7 @@ public class MoverObjeto : MonoBehaviour
     private BoxCollider2D boxCollider;
     private static List<GameObject> objetosEnCaldero = new List<GameObject>();
     [SerializeField] private float tiempoPocionEnPantalla = 3f;
+    [SerializeField] private float tiempoAnimacionEnPantalla = 15f;
     public AK.Wwise.Event magiapocion;
     public AK.Wwise.Event tirarencaldero;
     public AK.Wwise.Event agarrar;
@@ -146,7 +147,7 @@ public class MoverObjeto : MonoBehaviour
 
                     Puntuacion pocionManager = FindObjectOfType<Puntuacion>();
                     pocionManager.ReducirPuntuacion(3);
-                    Invoke("DesactivarPocionGenerada",tiempoPocionEnPantalla);
+                    Invoke("DesactiverPrefabConAnimacion",tiempoAnimacionEnPantalla);
                 
                 }
                 else if (objetosEnCaldero[0].CompareTag("Blanco") && objetosEnCaldero[1].CompareTag("Azul") ||
@@ -159,7 +160,7 @@ public class MoverObjeto : MonoBehaviour
 
                     Puntuacion pocionManager = FindObjectOfType<Puntuacion>();
                     pocionManager.ReducirPuntuacion(2);
-                    Invoke("DesactivarPocionGenerada",tiempoPocionEnPantalla);
+                    Invoke("DesactiverPrefabConAnimacion",tiempoAnimacionEnPantalla);
                 
                 }
                 else if (objetosEnCaldero[0].CompareTag("Blanco") && objetosEnCaldero[1].CompareTag("Amarillo") ||
@@ -172,7 +173,7 @@ public class MoverObjeto : MonoBehaviour
 
                     Tiempo tiempoManager = FindObjectOfType<Tiempo>();
                     tiempoManager.ReducirTiempo(5);
-                    Invoke("DesactivarPocionGenerada",tiempoPocionEnPantalla);
+                    Invoke("DesactiverPrefabConAnimacion",tiempoAnimacionEnPantalla);
                 
                 }
                 // Si no se han combinado objetos que generen una poción, devolver los objetos a su posición inicial
@@ -208,21 +209,26 @@ public class MoverObjeto : MonoBehaviour
         pocionNaranja.GetComponent<SpriteRenderer>().enabled = false;
     }
     void ActivarPrefabConAnimacion()
-{
-    // Activamos el Prefab
-    prefabMariposas.SetActive(true);
-    prefabExplosion.SetActive(true);
-    prefabGatitos.SetActive(true);
+    {
+        // Activamos el Prefab
+        prefabMariposas.SetActive(true);
+        prefabExplosion.SetActive(true);
+        prefabGatitos.SetActive(true);
 
-    // Obtenemos el componente Animator del Prefab
-    Animator anim = prefabMariposas.GetComponent<Animator>();
-    Animator anima = prefabExplosion.GetComponent<Animator>();
-    Animator animat = prefabGatitos.GetComponent<Animator>();
+        // Obtenemos el componente Animator del Prefab
+        Animator anim = prefabMariposas.GetComponent<Animator>();
+        Animator anima = prefabExplosion.GetComponent<Animator>();
+        Animator animat = prefabGatitos.GetComponent<Animator>();
 
-    // Reproducimos la animación
-    anim.Play("lluvia de mariposas");
-    anima.Play("explosión (1)");
-    anima.Play("lluvia de gatitos");
-}
+        // Reproducimos la animación
+        anim.Play("lluvia de mariposas");
+        anima.Play("explosión (1)");
+        anima.Play("lluvia de gatitos");
+    }
+    void DesactiverPrefabConAnimacion(){
+        prefabMariposas.SetActive(false);
+        prefabExplosion.SetActive(false);
+        prefabGatitos.SetActive(false);
+    }
 
 }
